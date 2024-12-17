@@ -100,3 +100,75 @@ body {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+@media screen and (min-width: 425px) {
+  body {
+    text-align: start;
+    padding: 2rem 4rem;
+  }
+
+  .top__section {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .left__side {
+    max-width: 40%;
+  }
+
+  .left__side_title {
+    font-size: 3.4rem;
+  }
+
+  .left__side_content {
+    font-size: 1.25rem;
+    width: 462px;
+  }
+
+  .right__side {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 40%;
+  }
+
+  .card__rating {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .card__rating:nth-child(1) {
+    align-self: flex-start;
+  }
+
+  .card__rating:nth-child(2) {
+    align-self: center;
+  }
+
+  .bottom__section {
+    flex-direction: row;
+    margin-bottom: 5rem;
+  }
+
+  .card__comment {
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+
+  .card__comment:nth-child(1) {
+    align-self: flex-start;
+    top: 0;
+  }
+
+  .card__comment:nth-child(2) {
+    align-self: center;
+    top: 1rem;
+  }
+
+  .card__comment:nth-child(3) {
+    align-self: flex-end;
+    top: 2rem;
+  }
+}
